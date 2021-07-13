@@ -14,7 +14,7 @@ app.get("/", function(req, res) {
 
 app.post("/", function(req, res) {
 
-  const apiKey = "e84861b2b22b6e2429ce7cd12e9aa7ac";
+  const apiKey = process.env.CLIENT_ID;
   const city = req.body.cname;
   const units = req.body.units;
 
